@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    color: #01013b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+/*typography*/
+h1,h2,h3,h4{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: #01013b;
+}
+h1{
+    font-size: 28pt;
+}
+h2{
+    font-size: 22pt;
+}
+h3{
+    font-size: 16pt;
+}
+p{
+    font-size: 12pt;
+    font-style: normal;
+    color: #01013b;
+    font-weight: 400;
+}
+.md-20{ font-size: 20pt; font-weight: 600;}
+
+/* colors */
+.navy{ color: #2f338e;}
+.purple{ color: #6933b6;}
+.violet{ color: #6968b6;}
+.cyan{ color: #8aa6f8;}
+.white{ color: white;}
+.gray{ color: #393939;}
+.darkgray{ color: #343434;}
+.black{ color: black;}
+/* BGs*/
+.bg1{ background-color: #6767a7;}
+.bg2{ background-color: #8aa6f8;}
+
+/*nav bar*/
+nav{
+    background-color: #1e65cf;
+    color: white;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color: white;
+}
+ul li{
+    display: inline-flex;
+    margin: 0 0.5em;
+}
+.language img{
+    margin-left: 0.2em;
+}
+
+/*footer*/
+footer{
+    background-color: #1e65cf; padding: 1em 0 2em 0;
+}
+/******************** media queries ******************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-6, .col-lg-4, .col, .col-5, .col-3{ width: 100%; flex: none;}
+    .mx-5{ margin-left: 0 !important; margin-right: 0 !important; margin-top: 1em;}
+    ul { margin: 0 ; padding: 0;}
+    .d-flex { display: block !important;}
+    .logo{ width: 70%; }
+    .text-end { text-align: center !important;}
+    .menu { display: initial;}
+    .menu img { width: 32px;}
+    .menu-links ul li { display: block;}
+    .onlyMobile{ display: block;}
+    .onlyDesktop{ display: none;}
+    .wider img.img-fluid{ width: 80%; text-align: center; margin: 0 2.2rem;}
+    nav {padding-bottom: 0.5rem;}
+    nav .row { padding-top: 1rem;}
+    .help-menu { margin-top: 0.5rem;}
+    h3{ font-size: 1.3rem;}
+
+    /* index */
+    .introduction h3 { margin: 0.8em 0 2em;}
+    p { text-align: justify; padding: 0 0.5em;}
+    p.black{ padding: 0 1.2em;}
+    .whatis h2{ margin-top: 0.8em;}
+    .howitworks{ margin: 0.8em 0; padding: 0 1.2em;}
+    .card{ border: none;}
+    .card-body{border-radius: 2em;background-color: #8aa6f8;}
+    .faqs .row.text-center.pt-5{ margin-top: 0; padding-top: 0 !important; }
+    footer{        height: 3em;    }
+
+    /* yma */
+    .yma ul li {display: block; text-align: right;}
+    .mt-66{margin-top: 2rem; margin-bottom: 2rem;}
+    .mt-66 h2 {margin-bottom: 2rem;}
+    .mt-66 h1 { text-align: left; margin-top: 1rem;}
+
+    /* get rent */
+    .get_rent p {padding: 2rem 2rem 0;}
+    .get_rent .card {border: 1px solid lightgray;}
+    .get_rent .card .card-body{ border-radius: 0;      background-color: white;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hiddenMobile{ display: none;}
+    .collapse{ display: block !important;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .onlyMobile{ display: none;}
+    .onlyDesktop { display: block;}
+    .mt-6{ margin-top: 3em;}
+    .mt-66{ margin-top: 6em;}
+    .pt-6{ padding-top: 3em;}
+    .pb-6{ padding-bottom: 3em;}
+    .pt-8 { padding-top: 5em;}
+    h3{ font-size: 1.2rem;}
+    .menu { display: none;}
+    nav{padding: 1em 0 2em 0;}    
+    nav ul{ padding: 0%;}
+    ul li{display: inline-flex; margin: 0 0.5em;}
+    .col-lg-4{ width: 50%;}
+    .col-5{ width: 50%;}
+    .whatis img{ height: auto !important;}
+    .howitworks img{ width: 100%;}
+    .howitworks h2{ font-size: 1.5rem;}
+    .howitworks p.gray{ font-size: 0.8rem;}
+    /*FAQs*/
+    .faqs .card{
+        box-shadow: none;
+        border: none;
+        border-radius: 2em;
+        background-color: #8aa6f8;
+    }
+    .card.col.mx-5{ margin: 0 1em !important;}
+    footer{
+        height: 6em;
+    }
+    /*introduccion*/
+    .withBorder{ border-right: solid #2f338e 1px;}
+    /* yma */
+    .yma{ background-image: url(images/yma1.jpg);
+        background-size: cover;
+        height: 18em;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+    .yma ul li{ display: block;}
+    .wider img.img-fluid{ width: 100%; text-align: initial; margin: 0;}
+    section.mt-66.darkgray img{ width: 100%;}
+    section.get_rent{ margin-bottom: 3rem;}
+    .order-1{ order:2 !important}
+    .order-2{ order:1 !important}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hiddenMobile { display: block;}
+    .col-lg-4{ width: 33.3333333%;}
+    .card.col.mx-5 {
+        margin-right: 3rem!important;
+        margin-left: 3rem!important;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
+    h2, .howitworks h2{
+        font-size: 24pt;
+    }
+    h3{
+        font-size: 18pt;
+    }
+    p, .howitworks p.gray{
+        font-size: 14pt;
+        font-style: normal;
+        color: #01013b;
+        font-weight: 400;
+    }
+    .col-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+    .va-b{ vertical-align: bottom;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    img.logo {
+        width: 430px;
+        height: 90px;
+    }
+    .language img{
+        margin-left: 0.2em;
+    }
+    ul li{
+        margin: 0 0.5em;
+    }
+    .menu-links{
+        padding-top: 0.3em;
+    }
+    /*banner*/
+    header img{
+        width: 100%;
+    }
+    /********************** INDEX *********************/
+
+    /* what is*/
+    .whatis img{ height: 100% !important;}
+    /*how it works*/
+    .howitworks img{
+        width: 100%;
+    }
+    .whatis .d-flex{ display: block !important;}
+    /*FAQs*/
+    .faqs .card{
+        height: 19rem;
+    }
+    footer{
+        margin-top: 8em;
+    }
+    /************************ YMA page ***************/
+    .yma{ background-image: url(images/yma1_xl.jpg);
+        background-size: contain;
+        height: 30em;}
+    .yma ul li{ display: block; font-size: 20pt;}
+    .regular h1{ font-style: normal;}
+    .md-20 p { font-size: 20pt; font-weight: 600;}
+    /*********************** get rent *********************/
+    .get_rent .card{
+        -webkit-box-shadow: 0px 10px 16px 0px rgba(145,136,145,0.66);
+    -moz-box-shadow: 0px 10px 16px 0px rgba(145,136,145,0.66);
+    box-shadow: 0px 10px 16px 0px rgba(145,136,145,0.66);
+    border: none;
+    border-radius: 0%;
+    }
+    .get_rent .card img{ border-radius: 0%;}
+    .get_rent .card .card-text { font-style: normal;}
+}
+@media only screen and (min-width: 1500px) {
+    .yma{ background-size: cover;
+    }
+}
